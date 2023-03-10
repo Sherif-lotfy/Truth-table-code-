@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std ;
+int main(){
+	int p,q;
+	cout<<"some notes before you get start :\n"<<"  && = ^ , || = v , ! = ~ ,"<<endl<<endl;
+	for(int x=1; x<=4; x=x+1){
+		switch(x){
+		case 1: {
+		 p=1;q=1;
+		 cout<<"p=1;q=1"<<endl;
+		 cout<<"(!p || q) ="<<(!p || q)<<"\t"<<"(p&&q || !p&&!q) ="
+			 <<(p&&q || !p&&!q)<<"\t"<<"((p||q) && !(p&&q)) ="<<((p||q) && !(p&&q))<<endl<<endl;
+		 break;
+			}
+		case 2: {
+		 p=1;q=0;
+		 cout<<"p=1;q=0"<<endl;
+		 cout<<"(!p || q) ="<<(!p || q)<<"\t"<<"(p&&q || !p&&!q) ="
+			 <<(p&&q || !p&&!q)<<"\t"<<"((p||q) && !(p&&q)) ="<<((p||q) && !(p&&q))<<endl<<endl;
+		 break;
+			}
+		case 3: {
+		 p=0;q=1;
+		 cout<<"p=0;q=1"<<endl;
+		 cout<<"(!p || q) ="<<(!p || q)<<"\t"<<"(p&&q || !p&&!q) ="
+			 <<(p&&q || !p&&!q)<<"\t"<<"((p||q) && !(p&&q)) ="<<((p||q) && !(p&&q))<<endl<<endl;
+		 break;
+			}
+		case 4: {
+		 p=0;q=0;
+		 cout<<"p=0;q=0"<<endl;
+		 cout<<"(!p || q) ="<<(!p || q)<<"\t"<<"(p&&q || !p&&!q) ="
+			 <<(p&&q || !p&&!q)<<"\t"<<"((p||q) && !(p&&q)) ="<<((p||q) && !(p&&q))<<endl<<endl;
+		 break;
+			}
+
+		}
+	}
+system("pause");	
+return 0;
+}
