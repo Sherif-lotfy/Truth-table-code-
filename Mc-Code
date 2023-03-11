@@ -1,0 +1,123 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "ANSWER OF AT LAB ASSIGNMENT no.2:"
+       << "\n";
+  int order;
+  int no;
+  int m;
+  int r;
+  int order2;
+  int r2;
+  int no2;
+  int order3;
+  int r3;
+  int no3;
+  int z;
+  cout << "Which sandwich you would like to have:"
+       << "\n"
+       << "1- Spicy Crispy Chicken Sandwich."
+       << "\n"
+       << "2- Big Mac."
+       << "\n"
+       << "3- Chicken McNuggets."
+       << "\n";
+  cin >> order;
+  cout << endl;
+  cout << "please enter the amount\n";
+  cin >> no;
+  if (order == 1) {
+    cout << "The price for " << no << " Spicy Crispy Chicken Sandwich is LE"
+         << no * 69 << ".";
+    r = no * 69;
+  } else if (order == 2) {
+    cout << "The price for " << no << " Big Mac is LE" << no * 80 << ".";
+    r = no * 80;
+  } else if (order == 3) {
+    cout << "The price for " << no << " Chicken McNuggets is LE" << no * 12
+         << ".";
+    r = no * 12;
+  } else {
+    cout << "Please enter a valid choise. \n";
+    r = 0;
+  }
+  cout << "\n"
+       << "\n";
+  cout << endl
+       << "Do you want somesing else?" << endl
+       << "1-Yes" << endl
+       << "2-No" << endl;
+  cin >> m;
+  if (m == 1) {
+    cout << "Please enter the next order you want\n";
+    cin >> order2;
+    cout << endl;
+    cout << "please enter the amount\n";
+    cin >> no2;
+    if (order2 == 1) {
+      cout << "The price for " << no2 << " Spicy Crispy Chicken Sandwich is LE"
+           << no2 * 69 << ".";
+      r2 = no2 * 69;
+    } else if (order2 == 2) {
+      cout << "The price for " << no2 << " Big Mac is LE" << no2 * 80 << ".";
+      r2 = no2 * 80;}
+     else if (order2 == 3) {
+      cout << "The price for " << no2 << " Chicken McNuggets is LE" << no2 * 12<< ".";
+      r2 = no2 * 12;}
+    else {
+      r2 = 0;
+    }
+       cout << endl
+       << "Do you want somesing else?" << endl
+       << "1-Yes" << endl
+       << "2-No" << endl;
+  cin >> z;
+  if (z == 1) {
+    cout << "Please enter the next order you want\n";
+    cin >> order3;
+    cout << endl;
+    cout << "please enter the amount\n";
+    cin >> no3;
+    if (order3 == 1) {
+      cout << "The price for " << no3 << " Spicy Crispy Chicken Sandwich is LE"
+           << no3 * 69 << ".";
+      r3 = no3 * 69;
+    } else if (order3 == 2) {
+      cout << "The price for " << no3 << " Big Mac is LE" << no3 * 80 << ".";
+      r3 = no3 * 80;
+    } else if (order3 == 3) {
+      cout << "The price for " << no3 << " Chicken McNuggets is LE" << no3 * 12
+           << ".";
+      r3 = no3 * 12;
+    } else {
+      cout << "Please enter a valid choise. \n";
+      r3 = 0;
+    }
+  } else if (z == 2) {
+
+    r3 = 0;
+  } else {
+    cout << "Please enter a valid choise. \n";
+    r3 = 0;
+    r2 = 0;
+  }
+    
+    }
+  
+   else if (m == 2) {
+
+    r2 = 0;
+    r3 =0 ;
+  } 
+  else {
+    cout << "Please enter a valid choise. \n";
+    r2 = 0;
+    r3 = 0;
+  }
+  cout << "\n"
+       << "\n";
+  cout << "Okay. have a good day\n";
+  cout << "ToTal : " << r + r2 + r3 << endl;
+  return 0;
+}
