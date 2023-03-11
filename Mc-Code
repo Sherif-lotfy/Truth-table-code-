@@ -65,7 +65,7 @@ int main() {
      else if (order2 == 3) {
       cout << "The price for " << no2 << " Chicken McNuggets is LE" << no2 * 12<< ".";
       r2 = no2 * 12;}
-    else {
+    else { cout << "Please enter a valid choise. \n";
       r2 = 0;
     }
        cout << endl
@@ -91,7 +91,7 @@ int main() {
            << ".";
       r3 = no3 * 12;
     } else {
-      cout << "Please enter a valid choise. \n";
+      cout << "sorry. there is no order registered with this number. \n";
       r3 = 0;
     }
   } else if (z == 2) {
