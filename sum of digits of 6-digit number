@@ -1,21 +1,30 @@
 #include <iostream>
 using namespace std;
 int main(){
-int x,a,b,c,d,e,f,g,h,i,j,k;
+int x,a,b,c,d,e,f;
+while(true){
 cout<<"enter the 6-digit number"<<endl;
 cin>>x;
+if(x>99999 && x<1000000){
 a=x/100000;
-b=x-(a*100000);
-c=b/10000;
-d=b-(c*10000);
-e=d/1000;
-f=d-(e*1000);
-g=f/100;
-h=f-(g*100);
-i=h/10;
-j=h-(i*10);
-cout<<a+c+e+g+i+j<<endl;
+x=x-(a*100000);
+b=x/10000;
+x=x-(b*10000);
+c=x/1000;
+x=x-(c*1000);
+d=x/1000;
+x=x-(d*1000);
+e=x/100;
+x=x-(e*100);
+f=x/10;
+x=x-(f*10);
+cout<<a+b+c+d+e+f+x<<endl;
+}
+else{
+cout<<"please enter a 6-digit Number"<<endl;
+}
+cout<<"======================================================================================================"<<endl;
+}
 system("pause");
 return 0;
-
 }
