@@ -1,5 +1,5 @@
 #Q4)
-#Sum A
+Sum A
 ```
 #include <iostream>
 using namespace std;
