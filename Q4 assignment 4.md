@@ -1,5 +1,6 @@
-#Q4)
-#Sum A
+Q4)
+##############
+Sum A
 ```
 #include <iostream>
 using namespace std;
@@ -15,7 +16,7 @@ system("pause");
 return 0;
 }
 ```
-#Sum B
+Sum B
 ```
 #include <iostream>
 using namespace std;
