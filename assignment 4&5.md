@@ -129,3 +129,7 @@ system("pause");
 return 0;
 }
 ```
+---
+Q6)
+---
+
