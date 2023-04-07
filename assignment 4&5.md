@@ -132,23 +132,23 @@ return 0;
 ---
 Q5)
 ```
- #include <iostream>
+#include <iostream>
 using namespace std;
 int main(){
-	float i=0,n,x=0,m=1,z=1,s;
-	do{
-		cout<<"n=....";
-		cin>>n;
-		while(i<=n){
-		s=2*i+1;
-		x+=(m/s);
-		m*=-1;
-		i++;
-		}
-		cout<<endl<<4*x<<endl<<"press 1 if you want to try with another value of n.";
-		cin>>z;
-		cout<<endl;
-	}while(z==1);
+  float i=0,n,x=0,m=1,z=1,s;
+  do{
+	cout<<"n=....";
+	cin>>n;
+	while(i<=n){
+	s=2*i+1;
+	x+=(m/s);
+	m*=-1;
+	i++;
+	}
+	cout<<endl<<4*x<<endl<<"press 1 if you want to try with another value of n.";
+	cin>>z;
+	cout<<endl;
+  }while(z==1);
 system("pause");
 return 0;
 }
