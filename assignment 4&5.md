@@ -135,8 +135,8 @@ Q5)
 #include <iostream>
 using namespace std;
 int main(){
-  float i=0,n,x=0,m=1,z=1,s;
-  do{
+   float i=0,n,x=0,m=1,z=1,s;
+   do{
 	cout<<"n=....";
 	cin>>n;
 	while(i<=n){
@@ -145,10 +145,12 @@ int main(){
 	m*=-1;
 	i++;
 	}
-	cout<<endl<<4*x<<endl<<"press 1 if you want to try with another value of n.";
+	cout<<endl;
+	cout<<4*x<<endl;
+	cout<<"press 1 if you want to try with another value of n.";
 	cin>>z;
 	cout<<endl;
-  }while(z==1);
+   }while(z==1);
 system("pause");
 return 0;
 }
