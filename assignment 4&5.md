@@ -132,4 +132,86 @@ return 0;
 ---
 Q6)
 ---
-
+Q6.1
+```
+ #include <iostream>
+using namespace std;
+int main(){
+	float i=1,n,x,s=0;
+	cout<<"enter the number of the integets...\n";
+	cin>>n;
+	while(i<=n){
+	cout<<"enter the integer"<<i<<"...\n";
+	cin>>x;
+	s+=x;
+	i++;
+	}
+	cout<<endl<<s/n<<endl;
+system("pause");
+return 0;
+}
+```
+Q6.2
+```
+ #include <iostream>
+using namespace std;
+int main(){
+	float i=1,y,x,s=0,m;
+	cout<<"enter the smallest integet x=...\n";
+	cin>>x;
+	m=x;
+	cout<<"enter the greatest integet y=...\n";
+	cin>>y;
+	if(x>=y)
+		cout<<"error ya m3lem";
+	while(x<=y){
+	s+=x;
+	x++;
+	}
+	cout<<endl<<s/(y-m+1)<<endl;
+system("pause");
+return 0;
+}
+```
+Q6.3
+```
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	float i=1,x,s=0,n;
+cout<<"enter the integer X =...\n";
+cin>>x;
+cout<<endl<<"enter the integer N =...\n";
+cin>>n;
+while(i<=n){
+	s+=(i/(sqrt(x+i)));
+	i++;
+}
+cout<<endl<<s<<endl;
+system("pause");
+return 0;
+} 
+```
+Q6.4
+```
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	float i=1,x,s=0,n,m=1,z=0;
+cout<<"enter the integer X =...\n";
+cin>>x;
+cout<<endl<<"enter the integer N =...\n";
+cin>>n;
+while(i<=n){
+	z+=m*(pow(i,i)/((n+s)*x));
+	s--;
+	i++;
+	m*=-1;
+}
+cout<<endl<<z<<endl;
+system("pause");
+return 0;
+} 
+```
