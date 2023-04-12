@@ -102,7 +102,7 @@ int main() {
 }
 ```
 ---
-#### Q3)
+#### Q3).
 Q3.a
 ```
 #include <iostream>
@@ -181,6 +181,93 @@ int main() {
 		<<A[i] <<" + "<<B[i] <<" - ("<< a[i]<<"*"<<b[i]<<") ="
 		<<A[i]+B[i]-(a[i]*b[i])<<endl;
 	}
+    system("pause");
+  return 0;
+}
+```
+---
+#### Q4).
+Q4.a
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int M[3] [3],i,j,sum=0;
+	for(i=0;i<=2;i++){
+		for(j=0;j<=2;j++){
+		cout<<"M ["<<i+1<<"] ["<<j+1<<"] = ";
+		cin>> M[i] [j];
+		sum+=M[i] [j];
+		}
+	}
+	cout<<endl<<sum<<endl;
+    system("pause");
+  return 0;
+}
+```
+Q4.b
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int M[3] [3],i,j,sum=0,s[3];
+	for(i=0;i<=2;i++){
+		for(j=0;j<=2;j++){
+		cout<<"M ["<<i+1<<"] ["<<j+1<<"] = ";
+		cin>> M[i] [j];
+		sum+=M[i] [j];
+		}
+		s[i]=sum;
+		sum=0;
+	}
+	for(i=0;i<=2;i++){
+	cout<<endl<<"sum of the row no."<<i+1<<" = "<<s[i]<<endl;
+	}
+    system("pause");
+  return 0;
+}
+```
+Q4.c
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int M[3] [3],i,j,max=0,m1,m2;
+	for(i=0;i<=2;i++){
+		for(j=0;j<=2;j++){
+		cout<<"M ["<<i+1<<"] ["<<j+1<<"] = ";
+		cin>> M[i] [j];
+		if(M[i] [j] > max){
+			max=M[i] [j];
+			m1=i+1;
+			m2=j+1;}
+		}
+	}
+	cout<<"The largest element is M["<<m1<<"] ["<<m2<<"] and ="<<max<<endl;
+    system("pause");
+  return 0;
+}
+```
+Q4.d
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int M[3] [3],i,j,m[3] [3];
+	for(i=1;i<=3;i++){
+		for(j=1;j<=3;j++){
+		cout<<"M ["<<i<<"] ["<<j<<"] = ";
+		cin>> M[i] [j];
+		m[j] [i] = M[i] [j];
+
+		}
+	}
+	cout<<endl;
+	for(i=1;i<=3;i++){
+		for(j=1;j<=3;j++){
+		cout<<"m["<<j<<"] ["<<i<<"]"<<" = "<<m[j] [i]<<endl;
+		}}
+
     system("pause");
   return 0;
 }
