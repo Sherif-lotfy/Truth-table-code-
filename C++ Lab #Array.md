@@ -102,4 +102,87 @@ int main() {
 }
 ```
 ---
-
+#### Q3)
+Q3.a
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int A[9],i,B[9];
+	for(i=0;i<=9;i++){
+	cout<<"A["<<i<<"]=";
+	cin >> A[i];
+	}
+	cout<<endl;
+	for(i=0;i<=9;i++){
+	cout<<"B["<<i<<"]=";
+	cin >> B[i];
+	}
+	cout<<endl;
+	for(i=0;i<=9;i++){
+	cout<<"c["<<i<<"] = "
+		<<"A["<<i<<"] - B["<<i<<"] = "
+		<< A[i]<<" - "<<B[i] <<" = "<<A[i]-B[i];
+	cout<<endl;
+	}
+    system("pause");
+  return 0;
+}
+```
+Q3.b
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int A[9],i,B[9];
+	for(i=0;i<=9;i++){
+	cout<<"A["<<i<<"]=";
+	cin >> A[i];
+	A[i]=A[i]*A[i];
+	}
+	cout<<endl;
+	for(i=0;i<=9;i++){
+	cout<<"B["<<i<<"]=";
+	cin >> B[i];
+	B[i]=B[i]*B[i];
+	}
+	cout<<endl;
+	for(i=0;i<=9;i++){
+	cout<<"D["<<i<<"] = "
+		<<"A["<<i<<"]^2 - B["<<i<<"]^2 = "
+		<< A[i]<<" - "<<B[i] <<" = "<<A[i]-B[i];
+	cout<<endl;
+	}
+    system("pause");
+  return 0;
+}
+```
+Q3.c
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int A[9],i,B[9],a[9],b[9];
+	for(i=0;i<=9;i++){
+	cout<<"A["<<i<<"]=";
+	cin >> a[i];
+	A[i]=a[i]*a[i];
+	}
+	cout<<endl;
+	for(i=0;i<=9;i++){
+	cout<<"B["<<i<<"]=";
+	cin >> b[i];
+	B[i]=b[i]*b[i];
+	}
+	cout<<endl;
+	for(i=0;i<=9;i++){
+	cout<<"E["<<i<<"] = "
+		<<"A["<<i<<"]^2 + B["<<i<<"]^2 - (A["<<i<<"]*B["<<i<<"])= "
+		<<A[i] <<" + "<<B[i] <<" - ("<< a[i]<<"*"<<b[i]<<") ="
+		<<A[i]+B[i]-(a[i]*b[i])<<endl;
+	}
+    system("pause");
+  return 0;
+}
+```
+---
