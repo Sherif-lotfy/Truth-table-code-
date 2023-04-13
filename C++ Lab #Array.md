@@ -279,8 +279,13 @@ Q5)
 using namespace std;
 int main() {
 	int M[10][10],i=1,j=1,sum=0;
-	for(i=1;i<=10;i++){
-		for(j=1;j<=10;j++){
+cout<<"x = ";
+cin>>x;
+cout<<endl<<"y = ";
+cin>>y;
+cout<<endl;
+	for(i=1;i<=x;i++){
+		for(j=1;j<=y;j++){
 			M[i][j]=i+j;
 			sum+=M[i][j];
 		}}
