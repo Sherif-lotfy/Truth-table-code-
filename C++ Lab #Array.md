@@ -273,3 +273,21 @@ int main() {
 }
 ```
 ---
+Q5)
+```
+#include <iostream>
+using namespace std;
+int main() {
+	int M[10][10],i=1,j=1,sum=0;
+	for(i=1;i<=10;i++){
+		for(j=1;j<=10;j++){
+			M[i][j]=i+j;
+			sum+=M[i][j];
+		}}
+	cout<<endl<<
+		"The summation of the elements located at the circumference = "
+		<<sum<<endl;
+    system("pause");
+  return 0;
+}
+```
