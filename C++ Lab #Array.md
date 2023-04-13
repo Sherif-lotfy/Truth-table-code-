@@ -284,8 +284,8 @@ cin>>x;
 cout<<endl<<"y = ";
 cin>>y;
 cout<<endl;
-	for(i=1;i<=x;i++){
-		for(j=1;j<=y;j++){
+	for(i=0;i<x;i++){
+		for(j=0;j<y;j++){
 			M[i][j]=i+j;
 			sum+=M[i][j];
 		}}
