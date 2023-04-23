@@ -10,7 +10,7 @@ int main (){
 			cin>>i;
 			while(i>3||i<1){
 				cout<<"sorry but there is no meal with this number...\n"
-					<<"plz chose your order from the menu "
+					<<"plz choose your order from the menu "
 					<<"and press the number that refers to it"<<endl;
 				cin>>i;
 			}
