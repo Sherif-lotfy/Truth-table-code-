@@ -1,6 +1,6 @@
 #### Q2).
 Q2.a
-```
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
@@ -16,7 +16,7 @@ int main() {
 }
 ```
 Q2.b
-```
+``` cpp
 #include <iostream>
 using namespace std;
 int main() {
